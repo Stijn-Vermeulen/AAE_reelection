@@ -1,0 +1,157 @@
+%-------------------------------------------------------------------------  
+%	PREAMBLE
+%-------------------------------------------------------------------------  
+\documentclass{beamer}
+\usepackage{setspace}
+\mode<presentation> 
+{\usetheme{Boadilla}}
+
+\usepackage{graphicx,mathabx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{adjustbox}
+\usepackage{dcolumn}
+\usepackage[symbol]{footmisc}
+\usepackage{caption}
+\usepackage[colorlinks]{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{subcaption}
+\usepackage{tabularx}
+\usepackage{verbatim}
+\usepackage{longtable}
+
+\setbeamertemplate{caption}[numbered]{}
+\newcommand{\comment}[1]{}
+
+%-------------------------------------------------------------------------  
+%	TITLE PAGE
+%-------------------------------------------------------------------------  
+\title[Economic Policy \& Reelection]{The Impact of Economic Policy on Reelection}
+\author[Vermeulen]{Stijn Vermeulen}
+\date[July 4, 2019]{July 4, 2019}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+%--------------------------------------------------------------
+\begin{frame}{Introduction}
+    \setlength\itemsep{1.5em}
+    \begin{itemize}
+    \setlength\itemsep{1.5em}
+        \item  \textit{Does \underline{lowering taxes} or \underline{increasing spending} improve the chances of being reelected?}\pause
+        \item  \textit{Does \underline{more economic growth} improve the chance of being reelected?} \pause
+    \end{itemize}
+    
+    \item \textbf{Brender \& Drazen (2008):} "How do budget deficits and economic growth affect reelection prospects? Evidence from a large panel of countries"
+    
+    \item \textbf{This presentation:} adaption and extension of paper Brender \& Drazen
+    
+\end{frame}
+%------------------------------------------------------
+\begin{frame}{Data: dependent variable}
+    \setlength\itemsep{1.5em}
+     \item Total of 341 observations for 73 countries over the period 1960-2003
+    \item \textbf{REELECT: 0 or 1}
+\item 2 definitions of REELECT:
+ \begin{enumerate}
+    \item \underline{Narrow sample:} strict definition, same person is reelected
+ \begin{itemize}
+ \item Advantage: focus on 1 leader results in a clearer relationship between performance and reelection (255 observations)
+ \end{itemize}
+
+    \item \underline{Expanded sample:} + leader substituted by party colleague due to death or legal term limits + leader left office 1 year in advance of election
+ \begin{itemize}
+ \item Advantage: substantial increase in information (347 observations)
+ \end{itemize}
+\end{enumerate}
+
+\end{frame}
+%--------------------------------------------------------------
+\begin{frame}{Data: independent variables}
+ \begin{table}
+ \begin{adjustbox}{width=0.9\textwidth}
+\begin{tabular}{l|l}
+\toprule
+\textbf{Economic variables} & \textbf{Institutional variables}\\
+\midrule
+ $\Delta$ GovBalance\_term & New Democracy \\
+ $\Delta$ GovBalance\_ey & Developed Country\\
+GDPPC\_gr  &  Maj. electoral system \\
+
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+
+\end{frame}
+
+%--------------------------------------------------------------
+\begin{frame}{Method}
+\begin{itemize}
+ \setlength\itemsep{1.6em}
+    \item Probit model
+    \item Check for possible heteroskedasticity: \textbf{Likelihood-ratio test}
+    \item Check if normality condition residuals holds: \textbf{Lagrange Multiplier test}
+\end{itemize}
+
+\end{frame}
+%--------------------------------------------------------------
+\begin{frame}{Probit model}
+    \input{Probit.tex}
+\end{frame}
+%--------------------------------------------------------------
+\begin{frame}{Hetprobit model}
+    \input{hetprobit.tex}
+\end{frame}
+%--------------------------------------------------------------
+\begin{frame}
+    \begin{figure}[H]
+    \centering
+    \label{figure:margins}
+    \centering
+    \includegraphics[width=1\textwidth]{Predicted_Narrow.png}
+
+\end{figure}
+
+\end{frame}
+%--------------------------------------------------------------
+\begin{frame}
+ \begin{figure}
+    \centering
+    \includegraphics[width=1\textwidth]{Predicted_Expanded.png}
+
+\end{figure}   
+\end{frame}
+%--------------------------------------------------------------
+\begin{frame}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\textwidth]{AME_Narrow.png}
+        \caption{Caption}
+        \label{fig:my_label}
+    \end{figure}
+\end{frame}
+%--------------------------------------------------------------
+\begin{frame}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\textwidth]{AME_expanded.png}
+        \caption{Caption}
+        \label{fig:my_label}
+    \end{figure}
+\end{frame}
+%--------------------------------------------------------------
+\begin{frame}{Conclusion}
+\setlength\itemsep{2em}
+\begin{enumerate}
+\setlength\itemsep{2em}
+    \item \textit{Does more growth lead to a higher reelection chance?} 
+    \item \textit{Does improvement in the government balance lead to a higher chance in reelection?}\pause
+\end{enumerate}
+\item\underline{Answer:} \textbf{Generally yes, but not always...}
+\end{frame}
+\end{document}
+\end{document}

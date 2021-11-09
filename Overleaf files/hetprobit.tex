@@ -1,0 +1,49 @@
+\begin{table}[H]
+ \centering
+  \caption{\small{Probit Model adjusted for heteroskedasticity - The Effects of Budget Balances and Growth on the Probability of Reelection}}
+ \label{table:hetprobit}
+\begin{adjustbox}{width=\textwidth}
+\begin{tabular}{l*{6}{c}} 
+\hline\hline \\[-0.5em]
+
+Dependent variable: & \multicolumn{3}{c}{\textbf{Narrow Sample}} & \multicolumn{3}{c}{\textbf{Expanded Sample}} \\ 
+		\cmidrule(l){2-4} \cmidrule(l){5-7} 
+		
+ \textbf{REELECT} &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}&\multicolumn{1}{c}{(6)}\\
+ &\multicolumn{1}{c}{All countries}&\multicolumn{1}{c}{Developed}&\multicolumn{1}{c}{Less Developed}&\multicolumn{1}{c}{All countries}&\multicolumn{1}{c}{Developed}&\multicolumn{1}{c}{Less Developed}\\
+\hline
+ & & & & & & \\
+$\Delta$ \textbf{GovBalance\_term} & 30.58 & ^\circ5.735 & 4.735 & 14.56\sym{*} & 5.700 & 12.25 \\
+ & (1.30) & (1.34) & (0.70) & (1.80) & (1.30) & (1.41) \\
+
+$\Delta$ \textbf{GovBalance\_ey} & ^\circ21.70 & 17.84\sym{**} & ^\circ9.144 & ^\circ21.13\sym{**} & 18.08\sym{***}& ^\circ10.77 \\
+ & (1.04) & (2.12) & (0.69) & (1.97) & (2.69) & (1.03) \\
+
+\textbf{GDPPC}\textsubscript{gr} & ^\circ37.63 & -6.593\sym{**} & 9.228 & ^\circ17.20\sym{*} & -6.619\sym{**} & ^\circ27.48\sym{***}\\
+ & (1.44) & (-1.98) & (0.75) & (1.65) & (-2.22) & (2.91) \\
+
+\textbf{New Democracies}& 2.370 & ^\circ0.428\sym{**} & 0.222 & 0.798 & ^\circ0.514\sym{***}& 0.231 \\
+ & (1.40) & (1.97) & (0.66) & (1.50) & (2.67) & (0.66) \\
+
+\textbf{Developed Countries}  & 3.167 & & & 1.447\sym{**} & & \\
+ & (1.26) & & & (2.25) & & \\
+
+\textbf{Maj. Electoral System} & 1.478 & 0.192 & 0.171 & 0.802\sym{*} & 0.273 & 0.696\sym{*} \\
+ & (1.18) & (0.86) & (0.54) & (1.94) & (1.16) & (1.78) \\
+
+
+\textbf{Constant}& -3.480 & 0.172 & -0.520 & -1.828\sym{***}& 0.0918 & -1.389\sym{***}\\
+ & (-1.58) & (1.37) & (-0.67) & (-3.06) & (0.67) & (-3.56) \\ [0.5em]
+\hline 
+\(N\) & 249 & 158 & 91 & 341 & 174 & 167 \\
+p-value LR test         &   5.56e-5         &    6.48e-4         &      0.0137         &     1.19e-3        &     3.91e-3         &      0.0705         \\
+LM test statitistic & 43.5201              & 20.8386             & 13.3731               & 23.3589              & 44.8822             & 39.50427              \\
+with p-values & (3.546e-10)          & (2.985e-5)          & (1.248e-3)            & (8.466e-5)           & (1.795e-10)         & (2.641e-9)\\
+\hline\hline
+\multicolumn{7}{l}{\footnotesize \textit{t} statistics in parentheses; \sym{*} \(p<.10\), \sym{**} \(p<.05\), \sym{***} \(p<.01\); Heteroskedastic Variables marked with ^\circ}\\
+
+\end{tabular}
+\end{adjustbox}
+
+
+\end{table}

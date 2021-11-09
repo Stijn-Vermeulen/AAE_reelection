@@ -1,0 +1,48 @@
+\begin{table}[!h]
+ \centering 
+ \caption{Average Marginal Effects of the Heteroskedastic model}
+ \label{AME}
+ \medium
+	
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\scalebox{0.80}{\begin{tabular}{l*{6}{c}} 
+\hline\hline \\[-0.5em]
+
+Dependent variable: & \multicolumn{3}{c}{\textbf{Narrow Sample}} & \multicolumn{3}{c}{\textbf{Expanded Sample}} \\ 
+		\cmidrule(l){2-4} \cmidrule(l){5-7} 
+		
+\textbf{REELECT} &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}&\multicolumn{1}{c}{(6)}\\
+ &\multicolumn{1}{c}{All countries}&\multicolumn{1}{c}{Developed}&\multicolumn{1}{c}{Less Developed}&\multicolumn{1}{c}{All countries}&\multicolumn{1}{c}{Developed}&\multicolumn{1}{c}{Less Developed}\\ 
+\hline 
+
+$\Delta$ \textbf{GovBalance\_term} & 2.263\sym{*} & 43.73 & 1.794 & 2.043\sym{**} & 6.686 & 2.494 \\
+ & (1.93) & (0.00) & (0.28) & (2.02) & (0.00) & (1.63) \\
+[1em]
+$\Delta$ \textbf{GovBalance\_ey}  & 2.664\sym{**} & 10.91 & 2.382 & 2.260 & 19.62 & 0.720 \\
+ & (1.98) & (0.00) & (0.23) & (1.63) & (0.00) & (0.44) \\
+[1em]
+\textbf{GDPPC}\textsubscript{gr} & 1.154 & -4.298 & 3.496 & 3.714\sym{***}& -9.078 & 6.854\sym{***}\\
+ & (0.41) & (-0.00) & (0.28) & (3.07) & (-0.00) & (5.20) \\
+[1em]
+\textbf{New Democracies}& 0.164\sym{**} & 0.395° & 0.0937\sym{*} & 0.109\sym{**} & 0.441° & 0.0467 \\
+ & (2.53) & & (1.84) & (2.06) & & (0.72) \\
+[1em]
+\textbf{Developed Countries} & 0.250\sym{***}& & & 0.225\sym{***}& & \\
+ & (4.34) & & & (4.09) & & \\
+[1em]
+\textbf{Maj. Electoral System} & 0.115\sym{**} & 0.0906 & 0.102\sym{*} & 0.120\sym{**} & 0.115 & 0.152\sym{**} \\
+ & (2.14) & (0.00) & (1.77) & (2.19) & (0.00) & (2.00) \\  [1em]
+
+\hline
+\(N\) & 249 & 158 & 91 & 341 & 174 & 167 \\ 
+\hline\hline
+\multicolumn{9}{l}{\footnotesize \textit{t} statistics in parentheses;  \sym{*} \(p<.10\), \sym{**} \(p<.05\), \sym{***} \(p<.01\). The coefficient for New Democracies was calculated manually for Developed countries }
+\multicolumn{9}{l}{\footnotesize in Narrow and Expanded Sample.}\\
+
+
+\end{tabular}
+
+}
+}
+\end{table} 

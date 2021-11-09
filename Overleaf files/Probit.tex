@@ -1,0 +1,47 @@
+\begin{table}
+ \centering
+ \caption{\small{Probit Model - The Effects of Budget Balances and Growth on the Probability of Reelection}}
+ \label{table:probit}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{l*{6}{c}}
+\hline\hline \\[-0.5em]
+
+Dependent variable: & \multicolumn{3}{c}{\textbf{Narrow Sample}} & \multicolumn{3}{c}{\textbf{Expanded Sample}} \\ 
+		\cmidrule(l){2-4} \cmidrule(l){5-7} 
+		
+ \textbf{REELECT} &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}&\multicolumn{1}{c}{(6)}\\
+ &\multicolumn{1}{c}{All countries}&\multicolumn{1}{c}{Developed}&\multicolumn{1}{c}{Less Developed}&\multicolumn{1}{c}{All countries}&\multicolumn{1}{c}{Developed}&\multicolumn{1}{c}{Less Developed}\\
+\hline
+ & & & & & & \\
+$\Delta$ \textbf{GovBalance\_term}  &       8.165\sym{**} &       11.47\sym{**} &       9.702         &       6.157\sym{*}  &       7.219         &       8.159\sym{*}  \\
+            &      (1.99)         &      (2.22)         &      (1.29)         &      (1.95)         &      (1.59)         &      (1.72)         \\
+
+$\Delta$ \textbf{GovBalance\_ey}      &       8.341\sym{*}  &       24.26\sym{***}&      -2.362         &       6.630\sym{*}  &       21.42\sym{***}&       0.458         \\
+            &      (1.81)         &      (3.41)         &     (-0.35)         &      (1.69)         &      (3.25)         &      (0.09)         \\
+
+\textbf{GDPPC}\textsubscript{gr}  &       10.92\sym{**} &      -3.182         &       23.02\sym{***}&  13.54\sym{***}&     -0.0730         &       21.12\sym{***}   \\
+            &      (2.57)         &     (-0.51)         &      (3.33)         &      (3.75)         &     (-0.01)         &      (4.12)        \\
+
+\textbf{New Democracies}       &       0.409\sym{*}  &       0.701         &       0.382         &       0.207         &       0.758\sym{*}  &       0.126         \\
+            &      (1.75)         &      (1.57)         &      (1.32)         &      (1.11)         &      (1.72)         &      (0.59)         \\
+
+\textbf{Developed Countries}     &       0.520\sym{**} &                     &                     &       0.457\sym{***}&                     &                     \\
+            &      (2.39)         &                     &                     &      (2.64)         &                     &                     \\
+
+
+\textbf{Maj. Electoral System}    &       0.451\sym{**} &       0.373         &       0.476\sym{*}  &       0.425\sym{***}&       0.327         &       0.425\sym{*}  \\
+            &      (2.35)         &      (1.40)         &      (1.65)         &      (2.61)         &      (1.36)         &      (1.87)         \\
+
+\textbf{Constant}      &      -0.808\sym{***}&       0.101         &      -1.202\sym{***}&      -0.901\sym{***}&     -0.0860         &      -1.073\sym{***}\\
+            &     (-3.22)         &      (0.48)         &     (-3.50)         &     (-4.76)         &     (-0.43)         &     (-4.69)         \\
+\hline
+\(N\)       &         249         &         158         &          91         &         341         &         174         &         167         \\
+ LM test statistic & 0.9826               & 21.3991             & 30.5473               & 1.7455               & 46.5495             & 23.0553               \\
+ with p-values & (0.6112) & (2.255e-5)          & (2.327e-7) & (0.4178) & (7.797e-11)         & (9.854e-6) \\
+ \hline\hline
+\multicolumn{7}{l}{\footnotesize \textit{t} statistics in parentheses; \sym{*} \(p<.10\), \sym{**} \(p<.05\), \sym{***} \(p<.01\)
+}\\
+\end{tabular}
+\end{adjustbox}
+
+\end{table}
